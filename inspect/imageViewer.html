@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>onRecord</title>
+    <script src="https://docs.getgrist.com/grist-plugin-api.js"></script>
+  </head>
+  <body>
+    <img id="image" src=""/>
+    <script>
+      grist.ready();
+      grist.onRecord(function(record) {
+        document.getElementById('image').src = record.Page_Last_Screenshot;
+      });
+    </script>
+  </body>
+</html>
